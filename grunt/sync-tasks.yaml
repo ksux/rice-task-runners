@@ -1,0 +1,10 @@
+browserSync:
+  options:
+    server:
+      baseDir: "./dist"
+    notify: false
+  bsFiles:
+    src: '<%= project.dest %>rice<%= package.version %>.css'
+watch:
+  files: ['<%= project.src %>/**/*']
+  tasks: ['reload']
