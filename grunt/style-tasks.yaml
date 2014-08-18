@@ -1,0 +1,10 @@
+less:
+  options:
+    compress: true
+  files:
+    -
+      expand: true
+      src: ['<%= project.less %>']
+      ext: '.css'
+autoprefixer:
+  src: '<%= project.css %>'

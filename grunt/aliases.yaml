@@ -1,0 +1,16 @@
+default:
+  - 'build'
+  - 'watch'
+build:
+  - 'clean'
+  - 'copy'
+  - 'styles'
+styles:
+  - 'less'
+  - 'autoprefixer'
+  - 'concat'
+reload:
+  - 'newer:copy'
+  - 'newer:less'
+  - 'newer:autoprefixer'
+  - 'concat'
