@@ -6,5 +6,5 @@ var runSequence = require('run-sequence');
 // First clean the `dist` directory.
 // Then run the other tasks in parallel.
 gulp.task('build', function(callback) {
-  runSequence('clean', ['copy', 'styles', 'assemble'], callback);
+  runSequence('clean', ['copy', 'styles', 'scripts'], callback);
 });
