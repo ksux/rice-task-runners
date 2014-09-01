@@ -1,0 +1,6 @@
+{
+    "default": ["build", "browserSync", "watch"],
+    "build": ["clean:all", "copy", "styles", "scripts"],
+    "styles": ["less", "autoprefixer", "concat", "clean:styles"],
+    "scripts": ["browserify"]
+}

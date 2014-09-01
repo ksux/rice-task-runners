@@ -1,0 +1,10 @@
+{
+    "browserify": {
+        "files": {
+            "./dist/assets/bundle.js": ["./src/scripts/index.js"]
+        },
+        "options": {
+            "debug": true
+        }
+    }
+}

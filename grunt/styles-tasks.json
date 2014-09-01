@@ -1,0 +1,24 @@
+{
+  "less": {
+      "options": {
+          "compress": true
+      },
+      "files": [{
+         "expand": true,
+         "src": ["./dist/styles/normalize.css", "./dist/styles/main.less"],
+         "ext": ".css"
+      }]
+  },
+  "autoprefixer": {
+      "normalize": {
+          "src": ["./dist/styles/normalize.css"]
+      },
+      "main": {
+          "src": ["./dist/styles/main.less"]
+      }
+  },
+  "concat": {
+      "src": ["./dist/styles/normalize.css", "./dist/styles/main.css"],
+      "dest": "./dist/assets/bundle.css"
+  }
+}

@@ -1,6 +1,0 @@
-css:
-  src: ['<%= project.css %>']
-  dest: '<%= project.dest %>rice<%= package.version %>.css'
-js:
-  src: ['<%= project.js %>']
-  dest: '<%= project.dest %>rice<%= package.version %>.js'

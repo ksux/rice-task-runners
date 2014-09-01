@@ -1,9 +1,0 @@
-clean:
-  src: '<%= project.dest %>'
-copy:
-  files:
-    -
-      expand: true
-      cwd: '<%= project.src %>'
-      src: ['**']
-      dest: '<%= project.dest %>'
