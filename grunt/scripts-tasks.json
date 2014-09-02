@@ -4,7 +4,9 @@
             "./dist/assets/bundle.js": ["./src/scripts/index.js"]
         },
         "options": {
-            "debug": true
+            "browserifyOptions": {
+                "debug": true
+            }
         }
     }
 }

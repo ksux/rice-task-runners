@@ -1,8 +1,5 @@
 {
   "less": {
-      "options": {
-          "compress": true
-      },
       "files": [{
          "expand": true,
          "src": ["./dist/styles/normalize.css", "./dist/styles/main.less"],
@@ -10,15 +7,17 @@
       }]
   },
   "autoprefixer": {
-      "normalize": {
-          "src": ["./dist/styles/normalize.css"]
-      },
-      "main": {
-          "src": ["./dist/styles/main.less"]
-      }
+      "src": ["./dist/styles/{main,normalize}.css"]
   },
   "concat": {
       "src": ["./dist/styles/normalize.css", "./dist/styles/main.css"],
+      "dest": "./dist/assets/bundle.css"
+  },
+  "csso": {
+      "options": {
+          "report": "gzip"
+      },
+      "src": "./dist/assets/bundle.css",
       "dest": "./dist/assets/bundle.css"
   }
 }
