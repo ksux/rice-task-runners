@@ -1,0 +1,18 @@
+{
+    "html": {
+        "expand": true,
+        "cwd": "./src",
+        "src": "{.htaccess,*.txt,*.html}",
+        "dest": "./dist"
+    },
+    "styles": {
+        "expand": true,
+        "cwd": "./src",
+        "src": "./styles/**/{*.less,*.css}",
+        "dest": "./dist"
+    },
+    "normalize": {
+        "src": "./node_modules/normalize.css/normalize.css",
+        "dest": "./dist/styles/normalize.css"
+    }
+}

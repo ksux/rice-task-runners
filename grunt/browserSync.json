@@ -1,0 +1,12 @@
+{
+    "options": {
+        "server": {
+            "baseDir": "./dist"
+        },
+        "notify": false,
+        "watchTask": true
+    },
+    "bsFiles": {
+        "src": ["assets/*.css","assets/*.js","*.html"]
+    }
+}

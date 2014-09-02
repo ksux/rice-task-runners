@@ -1,0 +1,14 @@
+{
+    "styles": {
+        "files": ["src/**/*.{css,less}"],
+        "tasks": ["newer:copy:styles", "newer:less", "newer:autoprefixer", "concat", "clean:styles"]
+    },
+    "scripts": {
+        "files": ["src/**/*.{js,json}"],
+        "tasks": ["scripts"]
+    },
+    "html": {
+        "files": ["src/**/*.html"],
+        "tasks": ["newer:copy:html"]
+    }
+}
